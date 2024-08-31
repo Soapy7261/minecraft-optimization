@@ -140,7 +140,7 @@ With the help of this entry you can set limits to how many entities of specified
 
 `Good starting value: false`
 
-Controls whether the spawn chunks remain always loaded. Setting this to `false` can reduce memory and CPU usage by unloading the spawn chunks when no players are nearby, improving server performance. However, this may stop redstone contraptions, farms, or other processes in the spawn area from running when no players are around.
+Controls whether the spawn chunks remain always loaded. Setting this to `false` can reduce memory and CPU usage by unloading the spawn chunks when no players are nearby, improving server performance. However, this may stop redstone contraptions, farms, or other processes in the spawn area from running when no players are around. Note that this does not affect the functionality of chunk loaders; they can still be used to keep specific chunks loaded as needed.
 
 #### keep-spawn-loaded-range
 
