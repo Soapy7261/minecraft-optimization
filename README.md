@@ -136,6 +136,18 @@ Good starting values:
 
 With the help of this entry you can set limits to how many entities of specified type can be saved. You should provide a limit for each projectile at least to avoid issues with massive amounts of projectiles being saved and your server crashing on loading that. You can put any entity id here, see the minecraft wiki to find IDs of entities. Please adjust the limit to your liking. Suggested value for all projectiles is around `10`. You can also add other entities by their type names to that list. This config option is not designed to prevent players from making large mob farms.
 
+#### keep-spawn-loaded
+
+`Good starting value: false`
+
+Controls whether the spawn chunks remain always loaded. Setting this to `false` can reduce memory and CPU usage by unloading the spawn chunks when no players are nearby, improving server performance. However, this may stop redstone contraptions, farms, or other processes in the spawn area from running when no players are around.
+
+#### keep-spawn-loaded-range
+
+`Good starting value: 3`
+
+Defines the number of chunks around the world spawn point that remain loaded at all times. Reducing this value lowers the range of always-active spawn chunks, decreasing memory and CPU usage while still keeping some chunks loaded. This option is only effective if keep-spawn-loaded is set to true; otherwise, it has no impact.
+
 ### [pufferfish.yml]
 
 #### max-loads-per-projectile
