@@ -146,7 +146,7 @@ Controls whether the spawn chunks remain always loaded. Setting this to `false` 
 
 `Good starting value: 3`
 
-Defines the number of chunks around the world spawn point that remain loaded at all times. Reducing this value lowers the range of always-active spawn chunks, decreasing memory and CPU usage while still keeping some chunks loaded. This option is only effective if keep-spawn-loaded is set to true; otherwise, it has no impact.
+Defines the number of chunks around the world spawn point that remain loaded at all times. Reducing this value lowers the range of always-active spawn chunks, decreasing memory and CPU usage while still keeping some chunks loaded. This option is only effective if `keep-spawn-loaded` is set to true; otherwise, it has no impact.
 
 ### [pufferfish.yml]
 
